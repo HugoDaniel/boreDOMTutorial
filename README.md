@@ -90,3 +90,10 @@ component.
 
 This component is also responsible to display the winning condition. We will use
 the same `slot` technique as before to render the text.
+
+## Thats it!
+
+Thanks for going through this.
+
+The full example can be found in boreDOM repository:
+https://github.com/HugoDaniel/boreDOM/tree/main/examples/tic-tac-toe
