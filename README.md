@@ -76,3 +76,9 @@ state now needs to be reflected on the DOM render function being returned.
 To set the symbol in the button we use a `<slot>`. In boreDOM each `<slot>` is
 available at the `slots` attribute of the init/render function but also in the
 HTMLElement itself.
+
+## 9. Look for a winner
+
+To look for a winner condition we are going to bring in a function and update
+the handler, so that when the user plays the corresponding winner state is
+always updated.
