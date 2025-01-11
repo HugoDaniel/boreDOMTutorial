@@ -49,3 +49,16 @@ app needs to work out with, namely:
 - If you need bundling or tree-shaking, then it needs to happen outside and
   before boreDOM components .js file is in.
 - Stuff that is not standard JS will not work.
+
+## 6. Add the onclick event
+
+We can add a `onclick` event and rename it to `play` to each button. Then when
+the player interacts with the buttons this even will be fired and can be caught
+anywhere in the component hierarchy that includes the `<game-button>` component.
+
+To handle the new `play` event, we can use the `on` method from the initializer
+options.
+
+To find out the index of the button being pressed, we can use the `self`
+attribute, which corresponds to the self component element (in this case, the
+`game-board` since the script matches to it).
