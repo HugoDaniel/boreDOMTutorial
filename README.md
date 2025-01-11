@@ -62,3 +62,8 @@ options.
 To find out the index of the button being pressed, we can use the `self`
 attribute, which corresponds to the self component element (in this case, the
 `game-board` since the script matches to it).
+
+## 7. Add the app initial state
+
+The tic-tac-toe initial state is made of the board squares, the next player to
+play and the winner (if any).
