@@ -21,3 +21,11 @@ that has a `data-component` attribute.
 In order to create a new component named `game-button` we will be adding its
 html to a `<template data-attribute="game-button">`. The boreDOM framework will
 then register it as a new web component that can be reused.
+
+## 3. Start boreDOM
+
+In order to use the button component `<game-button></game-button>` we need to
+call the `inflictBoreDOM()` function.
+
+To do so, lets bring the `boreDOM.min.js` dist file and import it in a `main.js`
+file.
