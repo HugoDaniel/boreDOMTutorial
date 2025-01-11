@@ -67,3 +67,8 @@ attribute, which corresponds to the self component element (in this case, the
 
 The tic-tac-toe initial state is made of the board squares, the next player to
 play and the winner (if any).
+
+## 8. Update the state when the user interacts
+
+Update the game state in the event handler whenever the user interacts. This
+state now needs to be reflected on the DOM render function being returned.

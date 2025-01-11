@@ -7,7 +7,15 @@ export const GameBoard = webComponent(({ on, self }) => {
       event.currentTarget.parentNode,
     );
 
-    console.log("Played at square number:", index);
+    const isGameWon = mutableState.gameState.winner !== null;
+    const isEmptySquare = mutableState.gameState.board[index] === undefined;
+
+    if (!isGameWon && isEmptySquare) {
+      mutableState.gameState.board[index] = mutableState.gameState.nextToPlay;
+      // Update the next to play:
+      mutableState.gameState.nextToPlay =
+        mutableState.gameState.nextToPlay === "O" ? "X" : "O";
+    }
   });
 
   return ((renderOptions) => {
