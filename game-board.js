@@ -18,7 +18,16 @@ export const GameBoard = webComponent(({ on, self }) => {
     }
   });
 
-  return ((renderOptions) => {
-    // On render/update
+  return (({ state }) => {
+    // Traverse all children (game-button) and set the associated board state:
+    let index = 0;
+    for (const child of self.children) {
+      const boardValue = state.gameState.board[index++];
+
+      if (boardValue) {
+        // Set the `valuePlayer` slot in each game-button:
+        child.slots.valuePlayed = boardValue;
+      }
+    }
   });
 });

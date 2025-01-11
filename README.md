@@ -72,3 +72,7 @@ play and the winner (if any).
 
 Update the game state in the event handler whenever the user interacts. This
 state now needs to be reflected on the DOM render function being returned.
+
+To set the symbol in the button we use a `<slot>`. In boreDOM each `<slot>` is
+available at the `slots` attribute of the init/render function but also in the
+HTMLElement itself.

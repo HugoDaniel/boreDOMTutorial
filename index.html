@@ -19,6 +19,7 @@
 
   <template data-component="game-button">
     <button onclick="dispatch('play')">
+      <slot name="valuePlayed"></slot>
     </button>
   </template>
 
