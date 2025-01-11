@@ -35,3 +35,17 @@ file.
 For the 9 squares lets create another component called "game-board", this
 component will have 9 `<game-button>` inside it. Lets style them to be in a 3x3
 grid with large buttons.
+
+## 5. Add the JS for the game board
+
+Each component can have associated JS with logic. This is done by adding a
+`<script>` tag that has a `src=` attribute that matches the name of the
+`data-component`.
+
+This script is then dynamically loaded. This has a lot of limitations that your
+app needs to work out with, namely:
+
+- Dynamic scripts imports have to be URL's.
+- If you need bundling or tree-shaking, then it needs to happen outside and
+  before boreDOM components .js file is in.
+- Stuff that is not standard JS will not work.
