@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>boreDOM Tic Tac Toe</title>
 
+  <link rel="stylesheet" href="game-board.css">
+  <link rel="stylesheet" href="game-button.css">
+
   <script src="main.js" type="module"></script>
 </head>
 
@@ -17,6 +20,22 @@
   <template data-component="game-button">
     <button></button>
   </template>
+
+  <template data-component="game-board">
+    <!-- First row -->
+    <game-button></game-button>
+    <game-button></game-button>
+    <game-button></game-button>
+    <!-- Second row -->
+    <game-button></game-button>
+    <game-button></game-button>
+    <game-button></game-button>
+    <!-- Third row -->
+    <game-button></game-button>
+    <game-button></game-button>
+    <game-button></game-button>
+  </template>
+  
 </body>
 </html>
 

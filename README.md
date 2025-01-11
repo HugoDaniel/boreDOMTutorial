@@ -29,3 +29,9 @@ call the `inflictBoreDOM()` function.
 
 To do so, lets bring the `boreDOM.min.js` dist file and import it in a `main.js`
 file.
+
+## 4. Create the game board
+
+For the 9 squares lets create another component called "game-board", this
+component will have 9 `<game-button>` inside it. Lets style them to be in a 3x3
+grid with large buttons.
