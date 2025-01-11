@@ -82,3 +82,11 @@ HTMLElement itself.
 To look for a winner condition we are going to bring in a function and update
 the handler, so that when the user plays the corresponding winner state is
 always updated.
+
+## 10. Display the player status
+
+To let the player know who is going to play next we need to create a new
+component.
+
+This component is also responsible to display the winning condition. We will use
+the same `slot` technique as before to render the text.

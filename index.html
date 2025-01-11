@@ -15,7 +15,8 @@
 <body>
   <h1>Tic Tac Toe</h1>
 
-  <game-button></game-button>
+  <game-turn></game-turn>
+  <game-board></game-board>
 
   <template data-component="game-button">
     <button onclick="dispatch('play')">
@@ -38,6 +39,11 @@
     <game-button></game-button>
   </template>
   <script src="./game-board.js" type="module"></script>
+
+  <template data-component="game-turn">
+    <p><slot name="playerTurn"></slot></p>
+  </template>
+  <script src="./game-turn.js" type="module"></script>
 
 </body>
 </html>
